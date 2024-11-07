@@ -1,0 +1,195 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1F2833;
+    color: #c5c6c7;
+    line-height: 1.6;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navbar Styles */
+header {
+    background: linear-gradient(90deg, #0B0C10 0%,  #0B0C10);
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgb(0, 0, 0) (0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 25px;
+}
+
+header nav ul li a {
+    color: #66fcf1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #45a29e;
+    transform: scale(1.1);
+}
+
+/* Home Section with background image */
+#home {
+    position: relative;
+    background-color: #1f2833;
+    color: #c5c6c7;
+    padding: 150px 20px;
+    text-align: center;
+}
+
+#home .overlay {
+    background: #45a29e; /* Dark overlay */
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Portfolio Section */
+/* Portfolio Section */
+#portfolio {
+    background-color: #1F2833;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #66FCF1; 
+}
+
+/* Flexbox for the project card */
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #45A29E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%; /* Adjust width of the card */
+    max-width: 1200px; /* Limit the max width */
+}
+
+/* Left side image styling */
+.project-image {
+    flex: 1;
+    max-width: 600px; /* Limit image size */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Round the corners of the image */
+}
+
+/* Right side text styling */
+.project-text {
+    flex: 1;
+    text-align: left;
+}
+
+.project-text h3 {
+    font-size: 2rem;
+    color: #0b0c10;
+    margin-bottom: 10px;
+}
+
+.project-text p {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+}
+
+/* Hover effect */
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/* Contact Section */
+#contact {
+    background-color: #3f212a31;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px #0b0c10;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #66FCF1;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #c5c6c7;
+}
+
+a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #66fcf1;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1F2833;
+    color: #c5c5c5;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
